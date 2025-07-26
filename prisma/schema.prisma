@@ -48,3 +48,11 @@ model VerificationToken {
 
   @@id([identifier, token])
 }
+
+model ResetToken {
+  identifier String
+  token      String
+  expires    DateTime
+
+  @@id([identifier, token])
+}
